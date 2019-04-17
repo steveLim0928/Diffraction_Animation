@@ -10,13 +10,13 @@ screen_height = root.winfo_screenheight()
 x_coord = (screen_width/2) - (700/2)
 y_coord = (screen_height/2) - (750/2) - 50
 #CANVAS
-c= Canvas(root,width = 700 ,height = 750).place(x= x_coord, y = y_coord)
+c= Canvas(root,width = 750 ,height = 750).place(x= x_coord, y = y_coord)
 
 
 #FRAME
-f1 = Frame(root, width = 700,height = 750,bg = 'grey').pack()
+f1 = Frame(root, width = 750,height = 750,bg = 'grey').pack()
 root.resizable(False , False)
-root.geometry('%dx%d+%d+%d' % (700, 750, x_coord, y_coord))
+root.geometry('%dx%d+%d+%d' % (750, 750, x_coord, y_coord))
 
 def mainpage():
     global root
