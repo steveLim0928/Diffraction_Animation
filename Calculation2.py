@@ -4,7 +4,7 @@ n = 1
 import math
 
 def empty(canvas):
-    canvas.create_text(60, 15, text = 'Calculation', fill = 'maroon', font =('Bahnschrift SemiBold',20,'bold', 'underline'))
+    canvas.create_text(80, 15, text = 'Calculation', fill = 'maroon', font =('Bahnschrift SemiBold',20,'bold', 'underline'))
     
     
 def double_calculation(gap, offset, wavelength, canvas):
@@ -30,15 +30,15 @@ def double_calculation(gap, offset, wavelength, canvas):
     
     n1 = str(n)
     
-    canvas.create_text(60, 15, text = 'Calculation', fill = 'maroon', font =('Bahnschrift SemiBold',20,'bold', 'underline'))
+    canvas.create_text(80, 15, text = 'Calculation', fill = 'maroon', font =('Bahnschrift SemiBold',20,'bold', 'underline'))
     
-    canvas.create_text(50, 40, text = ('Value of n = ' + n1), fill = 'red')
+    canvas.create_text(45, 40, text = ('Value of n = ' + n1), fill = 'red')
     
-    canvas.create_text(68, 60, text = ('Theta = ' + theta_value + ' rad'), fill = 'black')
+    canvas.create_text(50, 60, text = ('Theta = ' + theta_value + ' rad'), fill = 'black')
     
-    canvas.create_text(175, 80, text = ('Distance from centre to 1st bright fringe = ' + bright_value + ' mm'), fill = 'black')
+    canvas.create_text(140, 80, text = ('Distance from centre to 1st bright fringe = ' + bright_value + ' mm'), fill = 'black')
     
-    canvas.create_text(170, 100, text = ('Distance from centre to 1st dark fringe = ' + dark_value + ' mm'), fill = 'black')
+    canvas.create_text(135, 100, text = ('Distance from centre to 1st dark fringe = ' + dark_value + ' mm'), fill = 'black')
     
 
 ####################################################################################################################
@@ -67,15 +67,15 @@ def single_calculation(gap, offset, wavelength, canvas):
     
     n1 = str(n)
     
-    canvas.create_text(60, 15, text = 'Calculation', fill = 'maroon', font =('Bahnschrift SemiBold',20,'bold', 'underline'))
+    canvas.create_text(80, 15, text = 'Calculation', fill = 'maroon', font =('Bahnschrift SemiBold',20,'bold', 'underline'))
     
-    canvas.create_text(50, 40, text = ('Value of n = ' + n1), fill = 'red')
+    canvas.create_text(45, 40, text = ('Value of n = ' + n1), fill = 'red')
     
-    canvas.create_text(68, 60, text = ('Theta = ' + theta_value + ' rad'), fill = 'black')
+    canvas.create_text(50, 60, text = ('Theta = ' + theta_value + ' rad'), fill = 'black')
     
-    canvas.create_text(175, 80, text = ('Distance from centre to 1st bright fringe = ' + bright_value1 + ' mm'), fill = 'black')
+    canvas.create_text(140, 80, text = ('Distance from centre to 1st bright fringe = ' + bright_value1 + ' mm'), fill = 'black')
     
-    canvas.create_text(170, 100, text = ('Distance from centre to 1st dark fringe = ' + dark_value1 + ' mm'), fill = 'black')
+    canvas.create_text(135, 100, text = ('Distance from centre to 1st dark fringe = ' + dark_value1 + ' mm'), fill = 'black')
     
 
 

@@ -40,7 +40,7 @@ backbb = ImageTk.PhotoImage(backb)
 text1 = Label(root, text = 'INSTRUCTION FOR QUIZ', font =('Bahnschrift SemiBold',30,'underline'), bg = 'grey')
 text1.place(x = 700/2 - 220, y = 50)
 text2 = Label(root, text = '''1)This quiz contains 10 questions.\n
-2)The time limit fot this quiz is 10 minutes.\n
+2)The time limit fot this quiz is 8 minutes.\n
 3)This quiz cannot be stop once started.\n
 4)Once you selected your answer, you will straight away be directed to the next
   question.\n

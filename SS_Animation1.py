@@ -796,7 +796,7 @@ def get_back():
     global root
     reset_animation()
     root.destroy()
-    execfile ('Theory.py',globals())
+    execfile ('HP.py',globals())
     
 def get_home():
     global root
