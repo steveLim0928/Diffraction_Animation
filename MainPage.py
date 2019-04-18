@@ -56,7 +56,9 @@ def theory2():
     root.destroy()
 
     execfile('theory2.py',globals())
-  
+def quit1():
+    global root
+    root.destroy()
 
 #IMAGE
 backb = Image.open('left-arrow.png')
@@ -72,9 +74,9 @@ helpbb = ImageTk.PhotoImage(helpb)
 Button(root, image=backbb,height=75, width = 75,borderwidth=0,bg='black',activebackground='black',command = back).place(x=30,y=610)
 
 Button(root, image=helpbb,height=75, width=75,borderwidth=0,bg='black',activebackground='black',command = helpB).place(x= 600,y=600)
-Button(root, text="Quiz",font=('Bahnschrift'),height=3, width=20, borderwidth=5, command = quiz_ins).place(x= 230,y = 550)
-Button(root, text="Single Slit",font=('Bahnschrift'),height=3,width=20,borderwidth = 5, command = theory).place(x=230,y=350)
-Button(root, text="Double Slit",font=('Bahnschrift'),height=3,width=20,borderwidth=5, command = theory2).place(x=230,y=450)
-
+Button(root, text="Quiz",font=('Bahnschrift'),height=3, width=20, borderwidth=5, command = quiz_ins).place(x= 90,y = 475)
+Button(root, text="Single Slit",font=('Bahnschrift'),height=3,width=20,borderwidth = 5, command = theory).place(x=90,y=350)
+Button(root, text="Double Slit",font=('Bahnschrift'),height=3,width=20,borderwidth=5, command = theory2).place(x=370,y=350)
+Button(root, text="Quit",font=('Bahnschrift'),height=3,width=20,borderwidth=5, command = quit1, bg = 'red', fg = 'white').place(x=370,y=475)
 root.mainloop()
 
