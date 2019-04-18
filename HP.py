@@ -34,11 +34,11 @@ c= Canvas(f1,width = 700 ,height = 750)
 c.pack()
 c.create_image(w//2,h//2,image=photo)
 c.create_text(200,70,text = "HYUGEN'S\nPRINCIPLE",font = ('Bahnschrift SemiBold',40,'underline'),fill = 'black',justify = LEFT)
-c.create_text(250,250,text = '''A)Every point on a wavefront behaves as \n  a point source of spherical secondary \n  waves.
-\nB)Since they all start from the same \n  wavefront,they are all in phase.''',font = ('Bahnschrift SemiBold',17),fill = 'black',justify = LEFT)
+c.create_text(250,250,text = '''A)  Every point on a wavefront behaves as \n  a point source of spherical secondary \n  waves.
+\nB)  Since they all start from the same \n  wavefront,they are all in phase.''',font = ('Bahnschrift SemiBold',17),fill = 'black',justify = LEFT)
 c.create_text(220,420,text = '''i. At a given instant there is \n  constructive interference along the\n  common tangent to the spheres.
 \nii. destructive interference occurs \n    everywhere else.''',font = ('Bahnschrift SemiBold',15),fill = 'darkblue',justify = LEFT)
-c.create_text(230,530,text = "C)The tangent shows the next position \n  of the wavefront.",font = ('Bahnschrift SemiBold',17),fill = 'black',justify = LEFT)
+c.create_text(230,530,text = "C)  The tangent shows the next position \n  of the wavefront.",font = ('Bahnschrift SemiBold',17),fill = 'black',justify = LEFT)
 def theory():
     global root
     root.destroy()

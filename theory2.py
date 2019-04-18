@@ -24,16 +24,16 @@ text1 = Label(root, text = 'DOUBLE SLIT DIFFRACTION', font =('Bahnschrift SemiBo
 text1.place(x = 700/2 - 280, y = 100)
 
 
-text3 = Label(root, text = '''A)Young’s double slit experiment gave definitive proof of the wave
+text3 = Label(root, text = '''A)  Young’s double slit experiment gave definitive proof of the wave
 character of light.\n
-B)An interference pattern is obtained by the superposition of light
+B)  An interference pattern is obtained by the superposition of light
 from two slits.\n
-C)There is constructive interference when d sinθ = mλ, where d is the
-distance between the slits,θ is the angle relative to the incident
+C)  There is constructive interference when d sinθ = mλ, where d is
+the distance between the slits,θ is the angle relative to the incident
 direction, and m is the order of the interference.\n
-D)There is destructive interference when d sinθ = (m + 1/2) λ
+D)  There is destructive interference when d sinθ = (m + 1/2) λ
 (for m = 0, 1, -1, 2, -2,...)\n
-E)The number of fringes depends on wavelength and slit separation.
+E)  The number of fringes depends on wavelength and slit separation.
 The number of fringes will be very large for large slit separations.
 However, if the slit separation becomes much greater than the
 wavelength, the intensity of the interference pattern changes so that
