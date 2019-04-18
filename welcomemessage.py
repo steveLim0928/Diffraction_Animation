@@ -33,7 +33,7 @@ c.create_image(w//2,h//2,image=photo)
 c.create_text(350,50,text = "Welcome to this workshop!",font = ('Bahnschrift SemiBold',20),fill = 'darkblue',justify = CENTER)
 c.create_text(350,200,text = "LIGHT\nDIFFRACTION",font = ('Bahnschrift SemiBold',70,'underline'),fill = 'black',justify = CENTER)
 c.create_text(300,450,text = '''The topic that will be discussed in this \nworkshop is light diffraction!\n
-We will be touching on single slit and \ndouble slit diffraction.\nHope you guys enjoy!''',font = ('Bahnschrift SemiBold',20),fill = 'white',justify = LEFT)
+We will be touching on single slit and \ndouble slit diffraction.\nHope you guys enjoy!''',font = ('Bahnschrift SemiBold',20),fill = 'dark blue',justify = LEFT)
 def mainpage():
     global root
     root.destroy()
