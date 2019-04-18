@@ -35,9 +35,9 @@ D)A single slit produces an interference pattern
 characterized by a broad central maximum with narrower
 and dimmer maxima to the sides.\n
 E)There is destructive interference for a single slit when D Sin θ  = mλ,
-(for m = 1,-1,2,-2,3,.......),where D is the slit width, λ is the light’s wavelength,
-θ is the angle relative to the original direction of the light, m is the order of
-the minimum.(Note that there is no m=0 minimum)''',
+(for m = 1,-1,2,-2,3,.......),where D is the slit width, λ is the light’s
+wavelength, θ is the angle relative to the original direction of the light,
+m is the order of the minimum.(Note that there is no m=0 minimum)''',
 font = ('Bahnschrift SemiBold',15),bg = 'grey',justify= LEFT)
 text3.place(x=700/2 -320, y = 150)
 

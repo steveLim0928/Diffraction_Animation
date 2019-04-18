@@ -217,7 +217,7 @@ def Q1_ans():
 
     root.resizable(False , False)
 
-    root.geometry('700x770')
+    root.geometry('700x750')
     root.title("Q1 Solution")
     root.config(background = 'grey')
     
@@ -228,8 +228,10 @@ def Q1_ans():
     text1 = tk.Label(frame1, text = 'Question 1(Solution)', font =('Bahnschrift SemiBold',30,'bold','underline'), bg = 'grey')
     text1.place(x = 180, y = 50)
     
-    text2 = tk.Label(frame1, text = '''A single slit of width 0.5 mm is illuminated with monochromatic light (λ=680 nm).\nA screen is placed 1.8m from the slit to observe the fringe pattern.What is the
-angle between the second dark fringe (n=2) and the central maximum?''', font =('Bahnschrift SemiBold',15,'bold'),fg='darkblue',bg = 'grey',justify='left')
+    text2 = tk.Label(frame1, text = '''A single slit of width 0.5 mm is illuminated with monochromatic light
+(λ=680 nm). A screen is placed 1.8m from the slit to observe the
+fringe pattern.What is the angle between the second dark fringe (n=2)
+and the central maximum?''', font =('Bahnschrift SemiBold',15,'bold'),fg='darkblue',bg = 'grey',justify='left')
     text2.place(x =0, y = 100)
     
     
@@ -242,24 +244,24 @@ where a = 0.5mm, n = 2 and λ=680nm.''',font =('Bahnschrift SemiBold',15,'bold')
     a = tk.Radiobutton(frame1, text ='0.16°',state = 'disable',font =('Bahnschrift SemiBold',15), 
                                               fg = 'darkgreen', bg = 'grey', activebackground = 'grey',
                                              disabledforeground = 'lime')
-    a.place(x=0 , y = 180)
+    a.place(x=0 , y = 200)
             
     b = tk.Radiobutton(frame1, text ='0.17°',state = 'disable',font =('Bahnschrift SemiBold',15), 
                                               fg = 'grey', bg = 'grey', activebackground = 'grey',
                                              disabledforeground = 'white')
-    b.place(x=0 , y = 210)
+    b.place(x=0 , y = 230)
         
         
     c = tk.Radiobutton(frame1, text ='0.18°',state = 'disabled',font =('Bahnschrift SemiBold',15), 
                                               fg = 'red', bg = 'grey', activebackground = 'grey',
                                             disabledforeground = 'white')
-    c.place(x=0 , y = 240)
+    c.place(x=0 , y = 260)
         
         
     d = tk.Radiobutton(frame1, text ='0.19°',state = 'disable',font =('Bahnschrift SemiBold',15), 
                                               fg = 'grey', bg = 'grey', activebackground = 'grey',
                                              disabledforeground = 'white')
-    d.place(x=0 , y = 270)
+    d.place(x=0 , y = 290)
 
     while answered >= 1:
             if answer1[0] == '2':
@@ -296,9 +298,9 @@ Destructive interference occurs when the crest of one wave lines up with\nthe __
     
     
     
-    text4 = tk.Label(frame1, text= '''Solution:\nConstructive interference occurs when two crests/ troughs meet with each
-other. Hence, destructive interference will occur when a crest and a trough
-meet together.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
+    text4 = tk.Label(frame1, text= '''Solution:\nConstructive interference occurs when two crests/ troughs meet with
+each other. Hence, destructive interference will occur when a crest
+and a trough meet together.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
     text4.place(x=0, y = 380)
     #RADIOBUTTON
     a = tk.Radiobutton(frame1, text ='trough',state = 'disable',font =('Bahnschrift SemiBold',15), 
@@ -327,7 +329,7 @@ meet together.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey
             break
     else:
         a.config(disabledforeground = '#ADD8E6')
-    B1.place(x=20, y =600)
+    B1.place(x=20, y =580)
     B1.config(command = Q1_ans)
     B3.config(command = Q3_ans)
     
@@ -344,8 +346,9 @@ def Q3_ans():
     text1 = tk.Label(frame1, text = 'Question 3(Solution)', font =('Bahnschrift SemiBold',30,'bold','underline'), bg = 'grey')
     text1.place(x = 180, y = 50)
     
-    text2 = tk.Label(frame1, text = '''In a single-slit diffraction experiment, the width of the slit through which light
-passes is reduced. What happens to the width of the central bright fringe?''',
+    text2 = tk.Label(frame1, text = '''In a single-slit diffraction experiment, the width of the slit through which
+light passes is reduced. What happens to the width of the central bright
+fringe?''',
                   font =('Bahnschrift SemiBold',15,'bold'),fg='darkblue',bg = 'grey',justify='left')
     text2.place(x =0, y = 100)
     
@@ -384,7 +387,7 @@ reduced, the fringe width,d will increase.''',font =('Bahnschrift SemiBold',15,'
     else:
         c.config(disabledforeground = '#ADD8E6')
         
-    B1.place(x=20, y =600)
+    B1.place(x=20, y =580)
     B1.config(command = Q2_ans)
     B3.config(command = Q4_ans)
     
@@ -409,8 +412,9 @@ bright spot on the screen changes if the slit width is doubled?''',
     
     
     text4 = tk.Label(frame1, text= '''Solution:\nAccording to the single slit formula, d sin θ = nλ and  x= θD,
-the width of the slit,a is inversely proportional to the fringe width,x, thus when
-the width of the slit,a is doubled, the fringe width will reduced to half.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
+the width of the slit,a is inversely proportional to the fringe width,x,
+thus when the width of the slit,a is doubled, the fringe width will
+reduced to half.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
     text4.place(x=0, y = 380)
     #RADIOBUTTON
     a = tk.Radiobutton(frame1, text ='It will be cut to one quarter of its original size',state = 'disable',font =('Bahnschrift SemiBold',15), 
@@ -442,7 +446,7 @@ the width of the slit,a is doubled, the fringe width will reduced to half.''',fo
     else:
         b.config(disabledforeground = '#ADD8E6')
         
-    B1.place(x=20, y =600)
+    B1.place(x=20, y =580)
     B1.config(command = Q3_ans)
     B3.config(command = Q5_ans)
     
@@ -460,8 +464,9 @@ def Q5_ans():
     text1.place(x = 180, y = 50)
     
     text2 = tk.Label(frame1, text = '''Light from a monochromatic source  shines through a double slit onto a
-screen 5.00m away. The slits are 180mm apart. The dark bands on the screen
-are measured to be 1.70cm apart. What is the wavelength of the incident light?''',
+screen 5.00m away. The slits are 180mm apart. The dark bands on the
+screen are measured to be 1.70cm apart. What is the wavelength of the
+incident light?''',
                   font =('Bahnschrift SemiBold',15,'bold'),fg='darkblue',bg = 'grey',justify='left')
     text2.place(x =0, y = 100)
     
@@ -475,19 +480,19 @@ of the incident light.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg
     a = tk.Radiobutton(frame1, text ='0.457mm',state = 'disable',font =('Bahnschrift SemiBold',15), 
                                               fg = 'darkgreen', bg = 'grey', activebackground = 'grey',
                                              disabledforeground = 'white')
-    a.place(x=0 , y = 180)
+    a.place(x=0 , y = 200)
     b =tk.Radiobutton(frame1, text ='0.306mm',state = 'disable',font =('Bahnschrift SemiBold',15), 
                                               fg = 'darkgreen', bg = 'grey', activebackground = 'grey',
                                              disabledforeground = 'white')
-    b.place(x=0 , y = 210)
+    b.place(x=0 , y = 230)
     c =tk.Radiobutton(frame1, text ='0.392mm',state = 'disable',font =('Bahnschrift SemiBold',15), 
                                               fg = 'darkgreen', bg = 'grey', activebackground = 'grey',
                                              disabledforeground = 'white')
-    c.place(x=0 , y = 240)
+    c.place(x=0 , y = 260)
     d =tk.Radiobutton(frame1, text ='0.612mm',state = 'disable',font =('Bahnschrift SemiBold',15), 
                                               fg = 'darkgreen', bg = 'grey', activebackground = 'grey',
                                              disabledforeground = 'lime')
-    d.place(x=0 , y = 270)
+    d.place(x=0 , y = 290)
     while answered >= 5:
             if answer1[4] == '1':
                 a.config(disabledforeground = 'red')
@@ -500,7 +505,7 @@ of the incident light.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg
     else:
         d.config(disabledforeground = '#ADD8E6')
         
-    B1.place(x=20, y =600)
+    B1.place(x=20, y =580)
     B1.config(command = Q4_ans)
     B3.config(command = Q6_ans)
     
@@ -517,19 +522,20 @@ def Q6_ans():
     text1 = tk.Label(frame1, text = 'Question 6(Solution)', font =('Bahnschrift SemiBold',30,'bold','underline'), bg = 'grey')
     text1.place(x = 180, y = 50)
     
-    text2 = tk.Label(frame1, text = '''In a double slit experiment, if the seperation between the two slits is 0.050mm
-and the distance from the slits to a screen is 2.5m, find the spacing between
-the first-order and second-order bright fringes when coherent light of
-wavelength 600nm illuminates the slits.''',
+    text2 = tk.Label(frame1, text = '''In a double slit experiment, if the seperation between the two slits is
+0.050mm and the distance from the slits to a screen is 2.5m, find the
+spacing between the first-order and second-order bright fringes
+when coherent light of wavelength 600nm illuminates the slits.''',
                   font =('Bahnschrift SemiBold',15,'bold'),fg='darkblue',bg = 'grey',justify='left')
     text2.place(x =0, y = 100)
     
     
-    text4 = tk.Label(frame1, text= '''Solution:\nThe formula for Young's double slit diffraction, y= (nλD)/d is applied and
-the values where λ= 600nm, D= 2.5m and d= 0.05mm are substituted into the
-equation. Values of n = 1 and n= 2 is applied to the formula respectively. Lastly,
-the spacing between the fringe width of the first and second order is found by
-subtracting the value of y1 from y2.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
+    text4 = tk.Label(frame1, text= '''Solution:\nThe formula for Young's double slit diffraction, y= (nλD)/d
+is applied and the values where λ= 600nm, D= 2.5m and d= 0.05mm are
+substituted into the equation. Values of n = 1 and n= 2 is applied to the
+formula respectively. Lastly, the spacing between the fringe width
+of the first and second order is found bysubtracting the value of y1
+from y2.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
     text4.place(x=0, y = 380)
     #RADIOBUTTON
     a = tk.Radiobutton(frame1, text ='1.5cm',state = 'disable',font =('Bahnschrift SemiBold',15), 
@@ -560,7 +566,7 @@ subtracting the value of y1 from y2.''',font =('Bahnschrift SemiBold',15,'bold')
         
     else:
         b.config(disabledforeground = '#ADD8E6')
-    B1.place(x=20, y =600)
+    B1.place(x=20, y =580)
     B1.config(command = Q5_ans)
     B3.config(command = Q7_ans)
     
@@ -577,15 +583,15 @@ def Q7_ans():
     text1 = tk.Label(frame1, text = 'Question 7(Solution)', font =('Bahnschrift SemiBold',30,'bold','underline'), bg = 'grey')
     text1.place(x = 180, y = 50)
     
-    text2 = tk.Label(frame1, text = '''Supposed that Young's experiment is performed with blue-green light of 500nm.
-The slits are 1.2 mm apart, and the viewing screen is 5.4 m from the slits.
-How far apart are the bright fringes?''',
+    text2 = tk.Label(frame1, text = '''Supposed that Young's experiment is performed with blue-green light
+of 500nm. The slits are 1.2 mm apart, and the viewing screen is 5.4 m
+from the slits. How far apart are the bright fringes?''',
                   font =('Bahnschrift SemiBold',15,'bold'),fg='darkblue',bg = 'grey',justify='left')
     text2.place(x =0, y = 100)
     
     
-    text4 = tk.Label(frame1, text= '''Solution:\nThe bright fringe width can be found by applying the Young's double slit formula,
-y=(nλD)/d, where n =1, λ= 500nm, D= 5.4m and d=1.2mm.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
+    text4 = tk.Label(frame1, text= '''Solution:\nThe bright fringe width can be found by applying the Young's double
+slit formula, y=(nλD)/d, where n =1, λ= 500nm, D= 5.4m and d=1.2mm.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
     text4.place(x=0, y = 380)
     #RADIOBUTTON
     a = tk.Radiobutton(frame1, text ='2.25mm',state = 'disable',font =('Bahnschrift SemiBold',15), 
@@ -616,7 +622,7 @@ y=(nλD)/d, where n =1, λ= 500nm, D= 5.4m and d=1.2mm.''',font =('Bahnschrift S
         
     else:
         a.config(disabledforeground = '#ADD8E6')
-    B1.place(x=20, y =600)
+    B1.place(x=20, y =580)
     B1.config(command = Q6_ans)
     B3.config(command = Q8_ans)
    
@@ -670,7 +676,7 @@ they move through a gap or round an obstacle.''',font =('Bahnschrift SemiBold',1
         
     else:
         c.config(disabledforeground = '#ADD8E6')
-    B1.place(x=20, y =600)
+    B1.place(x=20, y =580)
     B1.config(command = Q7_ans)
     B3.config(command = Q9_ans)
     
@@ -687,17 +693,18 @@ def Q9_ans():
     text1 = tk.Label(frame1, text = 'Question 9(Solution)', font =('Bahnschrift SemiBold',30,'bold','underline'), bg = 'grey')
     text1.place(x = 180, y = 50)
     
-    text2 = tk.Label(frame1, text = '''A single slit, which is 0.050mm wide, is illuminated by light of 550nm wavelength.
-What is the angular separation between the first two minima on either side of
-the central maximum?''',
+    text2 = tk.Label(frame1, text = '''A single slit, which is 0.050mm wide, is illuminated by light of 550nm
+wavelength. What is the angular separation between the first two
+minima on either side of the central maximum?''',
                   font =('Bahnschrift SemiBold',15,'bold'),fg='darkblue',bg = 'grey',justify='left')
     text2.place(x =0, y = 100)
     
     
     text4 = tk.Label(frame1, text= '''Solution:\nThe formula for single slit diffraction, a sin θ=nλ is applied,
-and the values where a = 0.05mm, λ= 550nm are substituted into the equation.
-The value of n= 1 and n=2 are applied respectively into the equation. Lastly,
-the angular seperation is obtained by substracting θ1 from θ2.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
+and the values where a = 0.05mm, λ= 550nm are substituted into the
+equation. The value of n= 1 and n=2 are applied respectively into the
+equation. Lastly, the angular seperation is obtained by substracting
+θ1 from θ2.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
     text4.place(x=0, y = 380)
     #RADIOBUTTON
     a = tk.Radiobutton(frame1, text ='0.36°',state = 'disable',font =('Bahnschrift SemiBold',15), 
@@ -728,9 +735,9 @@ the angular seperation is obtained by substracting θ1 from θ2.''',font =('Bahn
         
     else:
         d.config(disabledforeground = '#ADD8E6')
-    B1.place(x=20, y =600)
+    B1.place(x=20, y =580)
     B1.config(command = Q8_ans)
-    B3.place(x=600,y=600)
+    B3.place(x=600,y=580)
     B3.config(command = Q10_ans)
    
 
@@ -753,8 +760,8 @@ with zero amplitude. What is the phase difference between the two waves?''',
     
     
     text4 = tk.Label(frame1, text= '''Solution:\nTwo waves will cancel to zero amplitude when the relative shift between
-them is half a period. This corresponds to half of 2π, which gives the correct
-answer of π.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
+them is half a period. This corresponds to half of 2π, which gives the
+correct answer of π.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey',justify='left')
     text4.place(x=0, y = 380)
     #RADIOBUTTON
     a = tk.Radiobutton(frame1, text ='(π/4) rad',state = 'disable',font =('Bahnschrift SemiBold',15), 
@@ -785,7 +792,7 @@ answer of π.''',font =('Bahnschrift SemiBold',15,'bold'),fg='black',bg = 'grey'
         
     else:
         c.config(disabledforeground = '#ADD8E6')
-    B1.place(x=20, y =600)
+    B1.place(x=20, y =580)
     B1.config(command = Q9_ans)
     B3.place_forget()
     
@@ -813,34 +820,34 @@ homebb = ImageTk.PhotoImage(homeb)
 
 
 B1 = tk.Button(root, image=backbb,height=75, width = 75,borderwidth = 0,bg = 'grey', activebackground = 'grey', command = Q1_ans)
-B1.place(x=20, y =600)
+B1.place(x=20, y =580)
 
 B2 = tk.Button(root,image=homebb,height=75,width = 75,borderwidth = 0,bg='grey',activebackground='grey',command=home)
-B2.place(x=300,y=600)
+B2.place(x=300,y=580)
 
 B3 = tk.Button(root,image=nextbb,height=75,width=75,borderwidth=0,bg='grey',activebackground='grey',command=Q2_ans)
-B3.place(x=600,y=600)  
+B3.place(x=600,y=580)  
 
 red_a = tk.Label(root, text='(',font =('Bahnschrift SemiBold',15,'bold'), bg = 'grey', fg = 'black')
-red_a.place(x=5,y=690)
+red_a.place(x=5,y=650)
 red = tk.Label(root, text='Red',font =('Bahnschrift SemiBold',15,'bold'), bg = 'grey', fg = 'red')
-red.place(x=15,y=690)
+red.place(x=15,y=650)
 red_b = tk.Label(root, text='indicates wrong answer)',font =('Bahnschrift SemiBold',15,'bold'), bg = 'grey', fg = 'black')
-red_b.place(x = 60, y = 690) 
+red_b.place(x = 60, y = 650) 
 
 text3_a = tk.Label(root, text='(',font =('Bahnschrift SemiBold',15,'bold'), bg = 'grey')
-text3_a.place(x=5,y=715)
+text3_a.place(x=5,y=675)
 text3 = tk.Label(root, text = 'Green', font =('Bahnschrift SemiBold',15,'bold'),fg='lime', bg = 'grey')
-text3.place(x=15,y=715)
+text3.place(x=15,y=675)
 text3_b = tk.Label(root, text='indicates correct answer)',font =('Bahnschrift SemiBold',15,'bold'), bg = 'grey')
-text3_b.place(x = 80 ,y = 715) 
+text3_b.place(x = 80 ,y = 675) 
 
 blue_a = tk.Label(root, text='(',font =('Bahnschrift SemiBold',15,'bold'), bg = 'grey', fg = 'black')
-blue_a.place(x=5,y=740)
+blue_a.place(x=5,y=700)
 blue = tk.Label(root, text='Light Blue',font =('Bahnschrift SemiBold',15,'bold'), bg = 'grey', fg = '#ADD8E6')
-blue.place(x=15,y=740)
+blue.place(x=15,y=700)
 blue_b = tk.Label(root, text='indicates unanswered questions\' answer)',font =('Bahnschrift SemiBold',15,'bold'), bg = 'grey', fg = 'black')
-blue_b.place(x = 110, y = 740)  
+blue_b.place(x = 120, y = 700)  
     
 
 root.mainloop()
